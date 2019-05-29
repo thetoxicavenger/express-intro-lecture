@@ -5,7 +5,7 @@
 
 */
 
-const todos = [{ id: 1, text: "Brush Teeth", completed: true }, { id: 2, text: "Complete Galvanize", completed: false }]
+let todos = [{ id: 1, text: "Brush Teeth", completed: true }, { id: 2, text: "Complete Galvanize", completed: false }]
 
 function router(req, res) {
     res.setHeader('Content-Type', 'application/json')
@@ -17,6 +17,7 @@ function router(req, res) {
         }
         // GET single todo
         else {
+            // /todos/1
             const id = parseInt(req.url[req.url.length - 1])
             res.end(
                 JSON.stringify(
@@ -48,7 +49,14 @@ function router(req, res) {
 
 
     // BONUS: DELETE single todo
-
+    // DELETE /todos/1
+    else if (req.method === 'DELETE') {
+        const id = parseInt(req.url[req.url.length - 1])
+        todos = todos.filter(todo => {
+            return todo.id !== id
+        })
+        res.end(`Todo with id ${id} deleted.`)
+    }
 
 }
 
