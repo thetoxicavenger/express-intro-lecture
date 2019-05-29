@@ -1,0 +1,20 @@
+{
+  "name": "express-intro-lecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "warmup": "nodemon node-http-warmup/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetoxicavenger/express-intro-lecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thetoxicavenger/express-intro-lecture/issues"
+  },
+  "homepage": "https://github.com/thetoxicavenger/express-intro-lecture#readme"
+}
