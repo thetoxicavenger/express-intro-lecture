@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "warmup": "nodemon node-http-warmup/server.js"
+    "warmup": "nodemon node-http-warmup/server.js",
+    "lecture": "nodemon express-version-lecture/app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/thetoxicavenger/express-intro-lecture/issues"
   },
-  "homepage": "https://github.com/thetoxicavenger/express-intro-lecture#readme"
+  "homepage": "https://github.com/thetoxicavenger/express-intro-lecture#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
